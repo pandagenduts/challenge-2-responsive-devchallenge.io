@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&display=swap');
+
+:root {
+    --font-ptserif: "PT Serif", serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+Hello! 
+
+thank you for checking my code
+
+if u are reading this, i hope u found what
+you are looking for. i was writing this code and
+organized it so everyone at least can learn on how
+i do this project.
+
+have a great day! ;)
+--------------------------------------------------
+
+Table of Content:
+
+1. layout
+    1.1 layout & title
+    1.2 layout of cards inside
+
+2. responsive
+*/
+
+
+/* 
+--------------
+1. layout 
+--------------
+*/
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 500;
+    color: #A9A9A9;
+}
+
+footer a {
+    color: inherit
+}
+
+footer a:first-child {
+    font-weight: 700;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    width: 1000px;
+}
+
+/* 
+--------------
+1.1 layout & title
+--------------
+*/
+
+.sectionTitle {
+    display: flex;
+    min-height: 120px;
+    padding-bottom: 30px;
+}
+
+.titleLeft {
+    flex: 1;
+}
+
+.titleRight {
+    flex: 1;
+}
+
+.titleRight p {
+    padding-top: 8px;
+    padding-right: 80px;
+}
+
+h2 {
+    font-family: var(--font-ptserif);
+    font-size: 36px;
+    line-height: 47.7px;
+    font-weight: 700;
+}
+
+.titleRight h3, 
+.titleRight p, 
+.cards p {
+    font-family: var(--font-poppins);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: var(--font-ptserif);
+    font-size: 12px;
+    line-height: 15.9px;
+    text-transform: uppercase;
+}
+
+.cards h4 {
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+}
+
+.card1 h4 {
+    right: -102px;
+}
+
+.card2 h4 {
+    right: -85px;
+}
+
+.card3 h4 {
+    right: -65px;
+}
+
+.card4 h4 {
+    right: -78px;
+}
+
+.card5 h4,
+.card6 h4 {
+    right: -70px;
+}
+
+.card p {
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.cards {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    position: relative;
+}
+
+/* 
+--------------
+1.2 layout of cards inside
+--------------
+*/
+
+.card {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+}
+
+.card img {
+    width: 85%;
+}
+
+.card1, 
+.card3 {
+    top: 0;
+}
+
+.card5 {
+    bottom: 0;
+}
+
+.card2,
+.card5 {
+    left: calc(50% - 100px);
+}
+
+.card1 {
+    left: 0;
+}
+
+.card2 {
+    top: 60px;
+}
+
+.card3 {
+    right: 0;
+}
+
+.card4 {
+    left: 0;
+    bottom: 60px;
+}
+
+.card6 {
+    right: 0;
+    bottom: 60px;
+}
+
+/* 
+--------------
+2. responsive
+--------------
+*/
+
+@media (max-width: 1366px) {
+    .container {
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        padding: 0 20px;
+    }
+        
+}
+
+@media (max-width: 767px) {
+
+    .card {
+        width: 150px;
+        height: 225px;
+    }
+    .card2,
+    .card5 {
+        left: calc(50% - 75px);
+    }
+
+    .titleRight p {
+        padding-right: 0;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    h4 {
+        font-size: 10px;
+        line-height: 13.25px;
+    }
+
+    .cards p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+
+    .card1 h4 {
+        right: -85px;
+    }
+    
+    .card2 h4 {
+        right: -71px;
+    }
+    
+    .card3 h4 {
+        right: -54px;
+    }
+    
+    .card4 h4 {
+        right: -65px;
+    }
+    
+    .card5 h4,
+    .card6 h4 {
+        right: -57px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .sectionTitle {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .titleLeft {
+        padding-bottom: 30px;
+    }
+
+    .titleRight {
+        padding-bottom: 50px;
+    }
+    
+    .container {
+        min-height: 912px;
+    }
+    
+    .cards {
+        height: calc(912px - 120px);
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    .card2 {
+        left: calc(100% - 150px);
+    }
+
+    .card3 {
+        top: calc(50% - 132px);
+        right: calc(100% - 150px);
+    }
+
+    .card4 {
+        bottom: calc(50% - 132px);;
+        left: calc(100% - 150px);
+    }
+
+    .card5 {
+        left: 0;
+        bottom: 60px;
+    }
+
+    .card6 {
+        bottom: 0;
+    }
+
+}
