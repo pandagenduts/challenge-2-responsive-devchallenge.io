@@ -1,2 +1,2 @@
-# challenge-2-responsive-devchallenge.io
+# challenge-2-responsive-devchallenges.io
 My Team Page
