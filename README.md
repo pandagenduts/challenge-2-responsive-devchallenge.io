@@ -7,4 +7,4 @@ finally manage to make it as super responsive as i could!
 
 24" and above, HD monitor (incl. laptop), tablet (portrait & lands), mobile (portrait & lands)
 
-demo URL https://extraordinary-malabi-9d7d2f.netlify.app/
+demo URL https://pandagenduts-my-team-page.netlify.app/
